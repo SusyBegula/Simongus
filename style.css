@@ -1,0 +1,189 @@
+body{
+    background-image: url("./images/bg.png");
+    background-size: cover;
+    background-repeat:no-repeat ;
+}
+
+#overlay {
+    position: fixed; /* Cover the entire screen */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    background-color: rgba(0, 0, 0, 0.918); /* Black with 50% opacity */
+    z-index: 9999; /* Make sure it is above other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Show a pointer cursor to indicate it’s clickable */
+}
+
+.press-start-2p-regular {
+    margin-top: 60px;
+    text-align: center;
+    color: rgb(86, 255, 232);
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 2px 2px 1px black;
+    font-size: 3rem;
+}
+
+.press-start-2p-regular-red {
+    margin-top: 60px;
+    text-align: center;
+    color: rgb(255, 86, 86);
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 2px 2px 1px black;
+    font-size: 3rem;
+}
+
+.main{
+    position: fixed;
+    height: 100vh;
+    width: 200vh;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr;
+    height: 100%;
+}
+
+.left-right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.main-left{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.main-right{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.left_screen{
+    border: 3px solid black;
+    border-radius: 5px;
+    background-image: url("./images/container.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    height: 80%;
+    width: 60%;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+    box-shadow: 2px 2px 10px;
+}
+
+.right_screen{
+    border: 3px solid black;
+    border-radius: 5px;
+    background-image: url("./images/right_container.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    height: 80%;
+    width: 60%;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+    box-shadow: 2px 2px 10px;
+}
+
+.left_indicator{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.img_left_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: max-content;
+    gap: 30px;
+}
+
+.img_left_container img{
+    height: 50px;
+    border-radius: 100%;
+    box-shadow: 5px 5px 10px;
+}
+
+.preview_container{
+    display: flex;
+    justify-content: center;
+}
+
+.preview{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    height: 70%;
+    width: 60%;
+    margin-top: 50px;
+}
+
+.lit_box{
+    background-color: rgba(51, 224, 255, 0.596);
+    border-radius: 10px;
+}
+
+.right_indicator{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.preview .pressed{
+    background-color: rgba(122, 122, 122, 0.473);
+    border-radius: 10px;
+    border: 3px solid black;
+    box-shadow: 1px 1px 5px;
+}
+
+.img_right_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: max-content;
+    gap: 30px;
+}
+
+.img_right_container img{
+    height: 50px;
+    border-radius: 100%;
+    box-shadow: 5px 5px 10px;
+}
+
+.input_box{
+    background-color: rgb(197, 197, 197);
+    border-radius: 10px;
+    border: 3px solid black;
+    box-shadow: 2px 2px 10px;
+}
+
+.input_box:hover{
+    background-color: rgba(197, 197, 197, 0.473);
+    border-radius: 10px;
+    border: 3px solid black;
+    box-shadow: 1px 1px 5px;
+}
